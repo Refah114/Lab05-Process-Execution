@@ -1,0 +1,11 @@
+#include <stdio.h>   // For printf() function 
+#include <unistd.h>  // For execl() function 
+
+int main()  
+{  
+    execl("/bin/ls", "ls", "-l", "-a", NULL); 
+
+    printf("EXEC Failed\n"); 
+
+    return 0; 
+}
